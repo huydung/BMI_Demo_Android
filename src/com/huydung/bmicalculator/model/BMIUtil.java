@@ -7,11 +7,16 @@ import android.content.SharedPreferences;
 
 
 public class BMIUtil {
-	public static Context context;
+	private Context context;
 	private static final String CENTIMETERS = "centimeters";
 	private static final String KGS = "kgs";
 	private int centimeters = -1;
 	private int kgs = -1;
+
+	public BMIUtil(Context context) {
+		super();
+		this.context = context;
+	}
 
 	public void saveValues(int centimeters, int kgs)
 	{
@@ -73,7 +78,7 @@ public class BMIUtil {
 		{
 			return BMIStatus.NORMAL;
 		}
-		else if( roundedValue < 30 )
+		else if( roundedValue < 300 )
 		{
 			return BMIStatus.FAT;
 		}
@@ -82,4 +87,14 @@ public class BMIUtil {
 			return BMIStatus.OBESITY;
 		}
 	}
+
+	public int getCentimeters() {
+		return centimeters;
+	}
+
+	public int getKgs() {
+		return kgs;
+	}
+	
+	
 }
