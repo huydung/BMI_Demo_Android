@@ -16,5 +16,5 @@
     <string name="normal">NORMAL</string>
     <string name="fat">OVERWEIGHT</string>
     <string name="obesity">OBESITY</string>
-	<string name="yourbmi">(Your BMI index: %d)</string>
+	<string name="yourbmi">(Your BMI index: %.2f)</string>
 </resources>

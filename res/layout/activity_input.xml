@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/txtMyHeight"
@@ -24,7 +25,7 @@
         android:layout_marginTop="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:max="250" />
+        android:max="120" />
 
     <TextView
         android:id="@+id/txtCurrentHeight"
@@ -56,7 +57,7 @@
         android:layout_marginTop="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:max="250" />
+        android:max="100" />
 
     <TextView
         android:id="@+id/txtCurrentWeight"
@@ -98,13 +99,13 @@
 
         <TextView
             android:id="@+id/txtResultStatus"
-            android:layout_width="wrap_content"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtYouAre"
             android:layout_toRightOf="@+id/iconView"
             android:text="@string/normal"
-            android:textAppearance="?android:attr/textAppearanceMedium" 
-            android:textSize="@dimen/font_large"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="28dp" />
         
         <TextView
             android:id="@+id/txtYourBMI"
