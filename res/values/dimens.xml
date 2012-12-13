@@ -1,0 +1,5 @@
+
+    <resources>
+        <dimen name="font_large">32dp</dimen>
+        <dimen name="font_normal">16dp</dimen>
+    </resources>

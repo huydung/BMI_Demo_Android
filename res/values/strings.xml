@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">BMICalculator</string>
+    <string name="bmi_description">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="calculate">Calculate</string>
+    <string name="about">About</string>
+    <string name="more_apps">More Apps</string>
+    <string name="my_height">My Height</string>
+    <string name="my_weight">My Weight</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_input">BMICalculator - Input</string>
+
+</resources>
