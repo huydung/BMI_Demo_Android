@@ -11,5 +11,10 @@
     <string name="my_weight">My Weight</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_input">BMICalculator - Input</string>
-
+    <string name="youare">You are&#8230;</string>
+    <string name="thin">THIN</string>
+    <string name="normal">NORMAL</string>
+    <string name="fat">OVERWEIGHT</string>
+    <string name="obesity">OBESITY</string>
+	<string name="yourbmi">(Your BMI index: %d)</string>
 </resources>

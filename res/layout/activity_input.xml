@@ -4,11 +4,118 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/txtMyHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".Input" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/my_height"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/sliderHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMyHeight"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="250" />
+
+    <TextView
+        android:id="@+id/txtCurrentHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sliderHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="1.64m"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtMyWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtMyHeight"
+        android:layout_below="@+id/sliderHeight"
+        android:layout_marginTop="24dp"
+        android:text="@string/my_weight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/sliderWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMyWeight"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="250" />
+
+    <TextView
+        android:id="@+id/txtCurrentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMyWeight"
+        android:layout_alignBottom="@+id/txtMyWeight"
+        android:layout_alignLeft="@+id/txtCurrentHeight"
+        android:layout_marginRight="18dp"
+        android:text="69kg"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderWeight"
+        android:layout_marginTop="30dp" 
+        android:id="@+id/groupResult">
+
+        <ImageView
+            android:id="@+id/iconView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMyWeight"
+            android:src="@drawable/normal" 
+            android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	/>
+
+        <TextView
+            android:id="@+id/txtYouAre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconView"
+            android:layout_marginTop="20dp"
+            android:text="@string/youare"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtResultStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtYouAre"
+            android:layout_toRightOf="@+id/iconView"
+            android:text="@string/normal"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textSize="@dimen/font_large"/>
+        
+        <TextView
+            android:id="@+id/txtYourBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultStatus"
+            android:layout_toRightOf="@+id/iconView"
+            android:text="@string/yourbmi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#AAAAAA" />
+        
+    </RelativeLayout>
 
 </RelativeLayout>
