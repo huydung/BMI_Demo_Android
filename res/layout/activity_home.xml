@@ -6,14 +6,14 @@
 
 	<Button
 	    android:id="@+id/btnCalculate"
-	    android:layout_width="220dp"
+	    android:layout_width="@dimen/full_button"
 	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="120dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="@dimen/top_padding_big"
 	    android:text="@string/calculate"
-	    android:textStyle="bold" 
-	    android:textSize="@dimen/font_large"/>
+	    android:textSize="@dimen/font_large"
+	    android:textStyle="bold" />
 	
     <TextView
         android:id="@+id/txtDescription"
@@ -22,7 +22,7 @@
         android:layout_below="@id/btnCalculate"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="false"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="@dimen/side_padding"
         android:layout_marginTop="5dp"
         android:text="@string/bmi_description"
         android:textStyle="italic"
@@ -32,24 +32,24 @@
 
     <Button
         android:id="@+id/btnAbout"
-        android:layout_width="110dp"
+        android:layout_width="@dimen/half_button"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="48dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="@dimen/side_padding_big"
+        android:layout_marginLeft="@dimen/side_padding_big"
         android:text="@string/about" 
         android:textSize="@dimen/font_normal" />
 
     <Button
         android:id="@+id/btnMore"
-        android:layout_width="110dp"
+        android:layout_width="@dimen/half_button"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignRight="@+id/btnAbout"
-        android:layout_marginRight="45dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginRight="@dimen/side_padding_big"
+        android:layout_marginBottom="@dimen/side_padding_big"
         android:text="@string/more_apps" 
         android:textSize="@dimen/font_normal" />
 

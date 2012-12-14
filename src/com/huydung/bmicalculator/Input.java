@@ -53,9 +53,8 @@ public class Input extends Activity implements SeekBar.OnSeekBarChangeListener {
         //Initialize the BMIUtil
         bmiUtil = new BMIUtil(this);
         
-        //Try to load the values that saved before, if any.
+        //Try to check the values that saved before, if any.
         //Notice we're doing this BEFORE assign event listener to sliders, to avoid loop
-        bmiUtil.loadValues();
         boolean hasValidValues = true;
         if( bmiUtil.getCentimeters() > -1 && bmiUtil.getCentimeters() < sliderHeight.getMax() + MIN_HEIGHT )
         {
@@ -84,11 +83,6 @@ public class Input extends Activity implements SeekBar.OnSeekBarChangeListener {
         sliderWeight.setOnSeekBarChangeListener(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_input, menu);
-        return true;
-    }
 
 	@Override
 	public void onProgressChanged(SeekBar seekBar, int progress,

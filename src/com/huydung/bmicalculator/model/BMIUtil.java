@@ -16,6 +16,7 @@ public class BMIUtil {
 	public BMIUtil(Context context) {
 		super();
 		this.context = context;
+		loadValues();
 	}
 
 	public void saveValues(int centimeters, int kgs)

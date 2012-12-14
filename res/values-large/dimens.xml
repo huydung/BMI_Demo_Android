@@ -1,0 +1,11 @@
+
+    <resources>
+        <dimen name="font_normal">24dp</dimen>
+        <dimen name="side_padding">50dp</dimen>
+        <dimen name="side_padding_big">100dp</dimen>
+        <dimen name="half_button">220dp</dimen>
+        <dimen name="full_button">400dp</dimen>
+        <dimen name="top_padding_big">300dp</dimen>
+         <dimen name="padding_top_input">200dp</dimen>
+         <dimen name="padding_left_icon">250dp</dimen>
+    </resources>
